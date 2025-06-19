@@ -1,0 +1,287 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #37462e;
+  padding: 15px 0;
+  color: white;
+  width: 100%;
+}
+
+.logo {
+  background: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+.logo h1 {
+  color: rgb(244, 241, 241); /* cor do texto branca */
+  font-weight: 700;
+  font-size: 1.8rem;
+  background: none !important;
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* ajuda na responsividade */
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #c1d99f;
+}
+
+/* Botões padrão */
+.btn-primary {
+  background-color: #587430;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline de links com essa classe */
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #405519;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #587430;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #587430;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: #587430;
+  color: white;
+}
+
+/* Header nav alinhamento */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0;
+  gap: 40px;
+  background: linear-gradient(135deg, #587430, #37462e);
+  color: white;
+  border-radius: 0 0 40px 40px;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-image {
+  flex: 1 1 100px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Services */
+.services {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  color: #6a8b3a;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f9f9f5;
+  border-radius: 20px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(88,116,48,0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #587430;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Contact */
+.contact {
+  background-color: #e6e8d9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #37462e;
+  margin-bottom: 40px;
+}
+
+.contact-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact .card {
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(55,70,46,0.15);
+}
+
+.contact .card h3 {
+  color: #37462e;
+}
+
+.contact .btn-primary {
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #37462e;
+  color: #f4f1f1; /* texto claro para melhor contraste */
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.redes-sociais a {
+  color: #c1d99f;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.redes-sociais a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .service-cards,
+  .contact-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

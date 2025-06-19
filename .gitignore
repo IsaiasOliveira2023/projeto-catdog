@@ -1,0 +1,20 @@
+﻿# Backend (Spring Boot)
+todosimple/target/
+todosimple/*.log
+todosimple/*.class
+todosimple/*.jar
+todosimple/*.war
+
+# Frontend (React/Node)
+frontend/node_modules/
+frontend/build/
+
+# IDEs e sistema
+*.iml
+.idea/
+.vscode/
+*.db
+.env
+.DS_Store
+Thumbs.db
+
